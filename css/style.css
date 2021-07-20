@@ -7,10 +7,14 @@
     height: 83vh;
 }
 
+.wrap{
+    overflow: hidden;
+}
 /* top スライド */
 .full {
     z-index: 2;
     width: 100%;
+    height: 100vh;
 }
 .full div {
     background-repeat: no-repeat;
@@ -67,7 +71,7 @@
 
 header {
     position: relative;
-    margin-bottom: -100px;
+    /* margin-bottom: -100px; */
 }
 
 /* グローバルメニュー */
@@ -105,7 +109,7 @@ header {
 }
 .join-block li{
     display: inline-block;
-    margin: 0 5%;
+    /* margin: 0 5%; */
 }
 
 .join-block a{
@@ -139,7 +143,7 @@ header {
     justify-content: flex-end;
 }
 .sns-icon li{
-    padding-left: 2%;
+    padding-left: 5%;
 }
 .sns-ins:hover, .sns-fac:hover{
     opacity: 0.5;
@@ -219,7 +223,7 @@ header {
 .logo {
     position: absolute;
     z-index: 8;
-    top: 20vh;
+    top: 17vh;
     width: 100%;
     text-align: center;
 }
@@ -333,11 +337,11 @@ header {
 /* 入会案内・体験予約 */
 
 .trial {
-    float: left;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     margin-left: 1%;
-    width: 40%;
+    width: 46%;
     text-align: center;
+    line-height: 8;
 }
 
 .trial ul {
@@ -353,11 +357,18 @@ header {
     color: gainsboro;
     transition: 0.8s;
     }
+
+
 @media screen and (max-width:768px) {
+    .header-bottom{
+        flex-direction: column;
+    }
     .trial{
         width: 100%;
+        margin: 130px 0 10px 0;
     }
     .trial ul{
+        width: 100%;
         display: flex;
         justify-content: center;
         
@@ -381,17 +392,22 @@ header {
 
 /* Keep the best with your passion 説明書き */
 
-
+.header-bottom{
+    display: flex;
+    position: relative;
+}
 .explain {
     background: rgba(33, 76, 129, 0.86);
     opacity: 72%;
     color: #fff;
     text-align: center;
     width: 50%;
-    float: right;
-    margin-right: 80px;
     min-height: 200px;
     z-index: 99;
+    position: absolute;
+    right: 20px;
+    top: -30px;
+
 }
 
 .explain-massege {
@@ -448,7 +464,7 @@ header {
 }
 @media screen and (max-width:768px) {
     .wrapper-svg{
-        transform: translate3d(6%, 8%, 0) rotate(
+        transform: translate3d(13%, 8%, 0) rotate(
             163deg
             ) scale(1, 0.55);
     }
@@ -477,11 +493,13 @@ header {
 }
 
 /* info */
-
+#info{
+    margin-bottom: 10%;
+}
 .content-title{
     display: flex;
     margin: 2% 0 3% 7%;
-
+    justify-content: left;
 }
 
 .content-title h2 {
@@ -504,22 +522,24 @@ header {
 }
 .info-box{
     display: flex;
-    margin-bottom: 100px;
-    justify-content: space-around;
+    margin-bottom: -40px;
+    justify-content: flex-start;
+    margin-left: 10%;
+    width: 80%;
     
 }
 
 .info-list {
     display: flex;
     flex-wrap: wrap;
-    width: 60%;
+    width: 100%;
     text-align: center;
     /* margin-left: 10%; */
     font-size: 20px;
 }
 
 .info-list dt {
-    width: 30%;
+    width: 20%;
     padding: 10px 0;
     border-top: 1px rgba(51, 51, 51, 0.5) solid;
     font-weight: normal;
@@ -528,7 +548,7 @@ header {
 }
 
 .info-list dd {
-    width: 70%;
+    width: 65%;
     padding: 10px 0;
     border-top: 1px rgba(51, 51, 51, 0.5) solid;
     text-align: left;
@@ -542,7 +562,8 @@ header {
 .more-link{
     display: flex;
     flex-direction: column;
-    /* margin-left: 10%; */
+    margin-right: 8%;
+    align-items: flex-end;
 }
 .info-list dd:hover, .more-link:hover {
     opacity: 0.8;
@@ -552,9 +573,11 @@ header {
 .more{
     background-size: 50%;
     font-size: 25px;
-    width: 20%;
+    /* width: 20%; */
     /* padding-left: 30%; */
-    margin-top: auto;
+    margin-right: 30px;
+    font-weight: 300;
+
 }
 .stickarrow {
     width: 100px;
@@ -571,6 +594,9 @@ header {
     .line{
         height: 35px;
     }
+    .content-title{
+        margin: 10px 15px;
+    }
     .content-title h2{
         font-size: 3.5rem;
     }
@@ -578,18 +604,37 @@ header {
         font-size: 1.2rem;
     }
     .info-box{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
+        width: 90%;
+        margin: 20px;
     }
     .info-list{
-        width: 90%;
+        width: 100%;
         font-size: 1.5rem;
     }
-
-    .more-link{
+    .info-list dt{
         width: 100%;
+        text-align: left;
+        border: none;
+        padding: 15px 0 3px 0;
     }
+    .info-list dd{
+        width: 100%;
+        border-top: none;
+        border-bottom: 1px solid #333;
+    }
+    .more-link{
+        width: 95%;
+        margin-left: 0;
+        margin-top: 35px;
+        align-items: flex-end;
+        }
+    /* .more{
+        font-weight: 300;
+    } */
+    .stickarrow{
+        width: 85px
+        }
+
 }
 
 /* aboutus */
@@ -614,6 +659,7 @@ header {
     width: 50%;
     position: absolute;
     top: 10vh;
+    padding: 10px;
     left: 7vw;
     z-index: 5;
 }
@@ -622,15 +668,20 @@ header {
     z-index: 1;
 }
 
-.explain-list p{
+.about-content-sp li{
+    display: flex;
+
+}
+.about-content-sp p{
     font-family: YuGothic, /* Mac用 */
     'Yu Gothic', /* Windows用 */;
     align-content: space-around;
     font-size: 1.7rem;
-    line-height: 2;
+    line-height: 4;
     z-index: 1;
+    padding-left: 10px;
 }
-.explain-list span{
+.about-content-sp span{
     font-size: 3rem;
     font-weight: 600;
     padding: 2%;
@@ -652,6 +703,47 @@ header {
     left: 11vw;
     font-size: 1.5rem;
     line-height: 1.8;
+}
+
+@media screen and (max-width:768px) {
+    .explain-about{
+        margin-top: 50px;
+        height: 79vh;
+    }
+    .explain-list{
+        width: 80%;
+        top: 5vh;
+        left: 4vw;
+
+    }
+    .explain-list h2{
+        font-size: 3.5rem;
+    }
+    .explain-list p{
+        font-size: 1.4rem;
+        padding: 0 0 15px 10px;
+        line-height: inherit;
+    }
+    .about-content-sp li{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-content-sp span{
+        display: block;
+    }
+    .explain-about img{
+        top: 37vh;
+        width: 50%;
+    }
+    .explain-about
+    .explain-about-description {
+        width: 90%;
+        left: 5vw;
+        top: 58vh;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
 }
 
 /* progrm */
@@ -707,6 +799,27 @@ header {
 	transform: scale(0.9);
     transition: 0.8s;
 }
+
+@media screen and (max-width:768px) {
+    .experience{
+        margin-top: 30px;
+    }
+    .program-list ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .program-list ul li{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .program-list li span {
+        font-size: 8.5vw;
+    }
+}
+
+
 /* アプリ */
 
 .app {
@@ -715,8 +828,12 @@ text-align: center;
 background: #eee;
 }
 .app img{
-    width: 50%;
-    margin-right: 2%;
+    width: 60%;
+}
+
+@media screen and(max-width:768px) {
+
+
 }
 /*--------------------------- フッター ---------------------------*/
 
@@ -730,6 +847,11 @@ background: #eee;
 .return-top:hover {
     color: black;
     transition: 0.8s;
+}
+@media screen and (max-width:768px) {
+    .footer img{
+        width: 15%;
+    }
 }
 
 .copyright{
