@@ -16,13 +16,12 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap-sp">
         <header id="header" class="header">
             <div class="container">
                 <section class="wave-bg">
 
-                    <!-------------------FV------------------------>
-
+                    <!-- ここからファーストビュー -->
                     <div class="wrapper">
                         <svg class="wrapper-svg" version="1.1" xmlns="http://www.w3org/2000/svg">
                             <path class="svg-path1" d="" />
@@ -52,27 +51,16 @@
                                 <div class="full-item04"><img src="img/wave-lounge.jpg" alt=""></div>
                             </div>
                             <!--/full-->
-
                         </div>
                         <!--/logo-concept-->
-
-                        <!-- <div class="scroll-text">
-                        Scroll down →<div class="test"><span>&nbsp;</span></div>
-                    </div>
-                    <div class="scroll-line">
-                        ::before
-                        ::after
-                    </div> -->
-
                     </div>
                     <!--/wrapper-->
-
+                    <!-- ここまでファーストビュー -->
                 </section>
-
             </div>
             <!--/container-->
-
         </header>
+
         <div class="header-bottom">
             <div class="trial">
                 <ul>
@@ -87,7 +75,7 @@
             </div>
         </div>
 
-        <!-------------------グローバルメニュー--------------------->
+        <!----グローバルメニュー---->
         <nav id="global-nav">
             <div class="bagger">
                 <span class="bar bar1"></span>
@@ -132,7 +120,7 @@
             <!--/bagger-menu-->
         </nav>
 
-        <!-------------------メイン--------------------->
+        <!----メイン---->
         <main id="contents" class="contents">
 
 
@@ -144,7 +132,7 @@
                 <div class="banner"><a href="#"><img src="./img/cam-open.jpg" alt="ハンモックヨガキャンペーン画像"></a></div>
             </div>
 
-            <!----------------- INFO ------------------------->
+            <!---- INFO ---->
             <section id="info" class="col section">
                 <div class="content-title">
                     <div class="line">&nbsp;</div>
@@ -169,7 +157,8 @@
                 </div>
             </section>
 
-            <!----------------- ABOUT US ------------------------->
+            <!---- ABOUT US ---->
+            <div class="bg-about">
             <div class="explain-about">
                 <div class="explain-list">
                     <div class="about-content">
@@ -192,7 +181,7 @@
                     </ul>
 
                 </div>
-                <!--explain-list-->
+                <!--/explain-list-->
                 <img src="./img/about-bg.jpg" alt="プールの背景写真">
                 <div class="explain-about-description">
                     <p>Passionはジムやプールなどのフィットネスクラブの枠にとどまらず、ヨガやクラブラウンジも備えたメンバー皆さまのライフスタイルを彩るクラブです。目先の成果ではなく10年、20年先も心身共に最高の状態であり続けるために価値のある時間と空間をご提供致します。
@@ -200,8 +189,9 @@
                 </div>
             </div>
             <!--/explain-about-->
-
-            <!----------------- PROGRAM ------------------------->
+        </div><!--/bg-->
+            <!---- PROGRAM ---->
+            <div class="bg-program">
             <div class="experience">
                 <div class="content-title">
                     <div class="line">&nbsp;</div>
@@ -221,7 +211,7 @@
                 <!--program-list-->
             </div>
             <!--experience-->
-
+        </div><!-- bg-program -->
             <div class="app">
                 <a href="#"><img src="./img/passion-app.png" alt="パッションアプリ画像"></a>
             </div>
@@ -230,7 +220,7 @@
 
         <footer>
             <div class="footer">
-                <a href="#" class="return-top"><img src="./img/return-top.png" alt="returntop"></a>
+                <a href="#header" class="return-top"><img src="./img/return-top.png" alt="returntop"></a>
                 <div id="footer">
                     <a href="#top"><img src="./img/passion-logo-blue.png" alt="passion logo"></a>
                     <ul class="sns">
@@ -241,64 +231,14 @@
                 <p class="copyright"><small>&copy; Passion All Right Reserved.</small></p>
             </div>
         </footer>
+
     </div><!-- /.wrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
-    <script src="./js/wave_background.js"></script>
-    <script src="./js/menu_III.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
-
-    <script>
-        $('.slider').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            // dots: true,
-            slidesToShow: 3,
-            arrows: true,
-            centerPadding: '10%',
-            adaptiveHeight: true,
-            // variableWidth: true,
-            zIndex: 10,
-            respnsive: [{//レスポンシブ
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-        // $(document).on('ready', function () {
-        $(".full").slick({
-            arrows: false,
-            // dots: true,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 3000,
-            fade: true,
-            pauseOnFocus: false,
-            pauseOnHover: false,
-            pauseOnDotsHover: false,
-            zIndex: 5,
-
-        });
-        // });
-
-        $(window).scroll(function () {
-            var top = $('#contents').offset().top;
-            var baggerTop = $('.bagger').offset().top;
-
-            if (baggerTop >= top) {
-                $('.bagger span').css('border-left-color', 'rgb(33, 76, 129)');
-                $('.bagger-menu').css('background', 'rgb(33, 76, 129)').css('opacity', '1');
-            } else {
-                $('.bagger span').css('border-left-color', '#eee');
-                $('.bagger-menu').css('background', 'rgba(33, 76, 129, 0.8)').css('opacity', '0.8');
-
-            }
-
-        })
-    </script>
+    <script src="./js/menu_III.js"></script>
+    <script src="./js/wave_background.js"></script>
 </body>
 
 </html>

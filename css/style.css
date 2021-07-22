@@ -7,39 +7,49 @@
     height: 83vh;
 }
 
-.wrap{
+.wrap-sp {
     overflow: hidden;
 }
-/* top スライド */
+
+/*------------------------------------------------------
+top スライド 
+------------------------------------------------------*/
+
 .full {
     z-index: 2;
     width: 100%;
     height: 100vh;
 }
+
 .full div {
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
-    /* background-attachment: fixed; */
     margin: 0;
     width: 100%;
-  }
+}
+
 .full div.full-item01 {
-  background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave_background.jpg);
+    background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave_background.jpg);
 }
+
 .full div.full-item02 {
-  background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-front.jpg);
+    background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-front.jpg);
 }
+
 .full div.full-item03 {
-  background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-pool.jpg);
+    background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-pool.jpg);
 }
+
 .full div.full-item04 {
-  background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-lounge.jpg);
+    background-image: linear-gradient( rgba(16, 148, 230, .5), rgba(230, 234, 240, .5), rgba(165, 176, 234, .5)), url(../img/wave-lounge.jpg);
 }
+
 .full div img {
     width: 100%;
     visibility: hidden;
 }
+
 .full .slick-dots {
     bottom: 4%;
     z-index: +1;
@@ -59,30 +69,32 @@
         max-width: 100vw;
     }
     .full div {
-        background-position: center center;  
+        background-position: center center;
     }
     .full div.full-item01 {
-      background-position: right 35% top;
+        background-position: right 35% top;
     }
 }
 
-
-/*--------------------------- ヘッダー ------------------------------*/
+/*------------------------------------------------------
+ヘッダー
+------------------------------------------------------*/
 
 header {
     position: relative;
-    /* margin-bottom: -100px; */
 }
 
-/* グローバルメニュー */
+/*------------------------------------------------------
+グローバルメニュー 
+------------------------------------------------------*/
 
-.header-top{
+.header-top {
     color: #fff;
     text-align: center;
     padding-bottom: 10%;
 }
 
-.header-top:hover{
+.header-top:hover {
     opacity: 0.7;
 }
 
@@ -94,25 +106,29 @@ header {
     font-size: 1.8rem;
     line-height: 2;
 }
-.blank{
+
+.blank {
     padding-left: 7%;
     padding-bottom: 7%;
 }
-.join-block{
+
+.join-block {
     padding-bottom: 10%;
     text-align: center;
 }
-.join-block ul{
+
+.join-block ul {
     display: block;
     text-align: center;
     margin-left: 10%;
 }
-.join-block li{
+
+.join-block li {
     display: inline-block;
     /* margin: 0 5%; */
 }
 
-.join-block a{
+.join-block a {
     padding: 10px;
 }
 
@@ -122,32 +138,37 @@ header {
     transition: 0.8s;
 }
 
-.program-hv:hover{
+.program-hv:hover {
     opacity: 0.8;
     color: gainsboro;
     transition: 0.8s;
     border-bottom: solid 1px gainsboro;
 }
 
-.join{
+.join {
     border: solid 1px #fff;
     padding: 5px;
     font-size: 1.5rem;
 }
+
 .program span {
     padding-left: 2%;
     font-size: 1rem;
 }
-.sns-icon{
+
+.sns-icon {
     display: flex;
     justify-content: flex-end;
 }
-.sns-icon li{
+
+.sns-icon li {
     padding-left: 5%;
 }
-.sns-ins:hover, .sns-fac:hover{
+
+.sns-ins:hover, .sns-fac:hover {
     cursor: pointer;
 }
+
 .bagger {
     width: 1.875vw;
     display: flex;
@@ -213,7 +234,9 @@ header {
     display: block;
 }
 
-/*-----------------FV---------------------*/
+/*------------------------------------------------------ 
+ファーストビュー
+------------------------------------------------------*/
 
 .logo-concept {
     color: #fff;
@@ -232,24 +255,27 @@ header {
     height: auto;
 }
 
-@media screen and (min-width:769px) and (max-width:1024px){
-    .conept{
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .conept {
         top: 30vh;
     }
 }
-@media screen and (max-width:768px) {
 
-    .logo img{
+@media screen and (max-width:768px) {
+    .logo{
+        top: 25vh;
+    }
+    .logo img {
         width: 100px;
     }
 }
+
 .concept {
     position: absolute;
     line-height: 0.8;
     width: 100%;
     z-index: 8;
-    top: 38vh;
-
+    top: 41vh;
 }
 
 .concept-text-ja {
@@ -263,6 +289,7 @@ header {
     color: #fff;
     text-shadow: 1px 2px 3px #808080;
 }
+
 .concept-text-en {
     font-size: min(17vw, 180px);
     font-family: 'Cormorant Garamond', serif;
@@ -274,7 +301,9 @@ header {
     text-shadow: 1px 2px 3px #808080;
 }
 
-/* top ログイン　お問い合わせ */
+/*------------------------------------------------------
+top ログイン　お問い合わせ 
+------------------------------------------------------*/
 
 .top-btn-list {
     position: absolute;
@@ -283,49 +312,36 @@ header {
     top: 45px;
     display: flex;
 }
+
 .top-btn-list li {
     padding: 5px 0 0 10px;
     font-size: 1.3rem;
 }
+
 .top-btn-list li:not(:list-child) {
     border-bottom: 1px solid #eee;
 }
+
 .top-btn-list li:hover {
     opacity: 0.8;
     transition: 0.8s;
     color: rgba(173, 169, 169, 0.692);
 }
-.top-btn-list img{
+
+/* .top-btn-list img {
     width: 20px;
-}
-
-/*scroll down→*/
-
-/* .scroll-text {
-    display: block;
-    color: #fff;
-    font-size: 20px;
-    line-height: 1;
-    letter-spacing: 0.1em;
-    transform: rotate(90deg);
-    position: absolute;
-    bottom: 90px;
-    right: 0;
-    padding-bottom: 50px;
-    z-index: 10;
-}
-
-.scroll-line {
-    position: relative;
-    margin: 49px 0 0 37px;
-    width: 1px;
-    height: 50px;
-    overflow: hidden;
-    z-index: 4;
 } */
-/*--------------------------- メイン ---------------------------*/
 
-#global-nav{
+@media screen and (max-width:768px) {
+    .top-btn-list{
+        top: 30px;
+    }
+}
+/*---------------------------------------------------- 
+メイン 
+------------------------------------------------------*/
+
+#global-nav {
     position: fixed;
     top: 30px;
     left: 30px;
@@ -333,11 +349,11 @@ header {
     width: 280px;
 }
 
-/* 入会案内・体験予約 */
+/*------------------------------------------------------ 
+入会案内・体験予約 
+------------------------------------------------------*/
 
 .trial {
-    /* margin-top: 150px; */
-    margin-left: 1%;
     width: 46%;
     text-align: center;
     line-height: 8;
@@ -351,31 +367,28 @@ header {
 .trial ul li {
     display: inline-block;
 }
+
 .trial li:hover {
     opacity: 0.8;
     color: gainsboro;
     transition: 0.8s;
-    }
-
+}
 
 @media screen and (max-width:768px) {
-    .header-bottom{
+    .header-bottom {
         flex-direction: column;
     }
-    .trial{
+    .trial {
         width: 100%;
-        /* margin: 130px 0 10px 0; */
     }
-    .trial ul{
+    .trial ul {
         width: 100%;
         display: flex;
         justify-content: center;
-        
     }
 }
 
-
-.join-left, .join-right{
+.join-left, .join-right {
     border: 1px solid rgba(51, 51, 51, 0.493);
     font-size: 2rem;
     letter-spacing: 2px;
@@ -385,16 +398,21 @@ header {
     padding: 1rem 1rem;
 }
 
-.join-right{
+.join-right {
     margin-left: 2rem;
 }
 
-/* Keep the best with your passion 説明書き */
+/*------------------------------------------------------
+Keep the best with your passion 
+------------------------------------------------------*/
 
-.header-bottom{
+.header-bottom {
     display: flex;
     position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
 }
+
 .explain {
     background: rgba(33, 76, 129, 0.86);
     opacity: 72%;
@@ -406,7 +424,6 @@ header {
     position: absolute;
     right: 20px;
     top: -30px;
-
 }
 
 .explain-massege {
@@ -427,22 +444,23 @@ header {
     margin: 10px auto;
     letter-spacing: 1px;
 }
+
 @media screen and (max-width:768px) {
-    .explain{
+    .explain {
         width: 100%;
         position: static;
-        /* margin: 0 auto;
-        margin-top: 25px; */
     }
-    .explain-massege{
+    .explain-massege {
         font-size: 2.5rem;
         letter-spacing: normal;
     }
-    .explain-text{
+    .explain-text {
         font-size: 1.2rem;
     }
 }
+
 /* cam バナー */
+
 .wrapper {
     position: absolute;
     top: 0;
@@ -462,44 +480,56 @@ header {
     height: 200%;
     z-index: 999;
 }
+
 @media screen and (max-width:768px) {
-    .wrapper-svg{
-        transform: translate3d(10%, 8%, 0) rotate(
-            163deg
-            ) scale(1, 0.55);
+    .wrapper-svg {
+        transform: translate3d(10%, 8%, 0) rotate(163deg) scale(1, 0.55);
     }
 }
-
 
 .slider {
     width: 80%;
     margin: 5% 10%;
     box-sizing: border-box;
-    height: 194px;
-}
-.slider img:hover{
-    transform: scale(1.2);
-    transition: 0.8s;
-}
-.slider img {
-    width: 100%;
-    max-width: 300px;
     height: auto;
 }
 
-.slick-prev:before,
-.slick-next:before {
+@media screen and (max-width: 768px) {
+    .slider {
+        margin: 10%;
+    }
+}
+
+.slider img:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+.slider img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.slick-prev:before, .slick-next:before {
     color: #000;
 }
 
-/* info */
-#info{
+/*------------------------------------------------------ 
+info 
+------------------------------------------------------*/
+
+#info {
     margin-bottom: 10%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
-.content-title{
+
+.content-title {
     display: flex;
-    margin: 2% 0 3% 7%;
     justify-content: left;
+    max-width: 1500px;
+    margin: 50px auto;
 }
 
 .content-title h2 {
@@ -507,26 +537,26 @@ header {
     font-family: 'Cormorant Garamond', serif;
 }
 
-
-.content-title p{
+.content-title p {
     font-size: 1.5rem;
     padding-left: 10px;
     font-family: YuGothic, /* Mac用 */
-    'Yu Gothic', /* Windows用 */;
+    'Yu Gothic', /* Windows用 */
+    ;
     padding-top: 20px;
 }
 
-.line{
+.line {
     border-left: solid #5861A7 5px;
     height: 50px;
 }
-.info-box{
+
+.info-box {
     display: flex;
     margin-bottom: -40px;
     justify-content: flex-start;
     margin-left: 10%;
     width: 80%;
-    
 }
 
 .info-list {
@@ -541,44 +571,42 @@ header {
 .info-list dt {
     width: 20%;
     padding: 10px 0;
-    border-top: 1px rgba(51, 51, 51, 0.5) solid;
     font-weight: normal;
     /* text-align: left; */
     letter-spacing: 1px;
 }
 
+.info-list dt, .info-list dd {
+    border-bottom: 1px rgba(51, 51, 51, 0.5) solid;
+}
+
 .info-list dd {
     width: 65%;
     padding: 10px 0;
-    border-top: 1px rgba(51, 51, 51, 0.5) solid;
     text-align: left;
     font-weight: normal;
 }
 
-.info-list :first-of-type {
-    border-top: none;
-}
-
-.more-link{
+.more-link {
     display: flex;
     flex-direction: column;
     margin-right: 8%;
     align-items: flex-end;
 }
+
 .info-list dd:hover, .more-link:hover {
     opacity: 0.8;
     color: darkgray;
     transition: 0.8s;
 }
-.more{
+
+.more {
     background-size: 50%;
     font-size: 25px;
-    /* width: 20%; */
-    /* padding-left: 30%; */
     margin-right: 30px;
     font-weight: 300;
-
 }
+
 .stickarrow {
     width: 100px;
     height: 8px;
@@ -586,71 +614,74 @@ header {
     border-right: 1px solid #000;
     transform: skew(45deg);
     color: black;
-    /* margin-left: 20%; */
-
-  }
+}
 
 @media screen and (max-width:768px) {
-    .line{
+    .line {
         height: 35px;
     }
-    .content-title{
+    .content-title {
         margin: 10px 15px;
     }
-    .content-title h2{
+    .content-title h2 {
         font-size: 3.5rem;
     }
-    .content-title p{
+    .content-title p {
         font-size: 1.2rem;
     }
-    .info-box{
+    .info-box {
         width: 90%;
         margin: 20px;
     }
-    .info-list{
+    .info-list {
         width: 100%;
         font-size: 1.5rem;
     }
-    .info-list dt{
+    .info-list dt {
         width: 100%;
         text-align: left;
         border: none;
         padding: 15px 0 3px 0;
     }
-    .info-list dd{
+    .info-list dd {
         width: 100%;
         border-top: none;
         border-bottom: 1px solid #333;
     }
-    .more-link{
+    .more-link {
         width: 95%;
         margin-left: 0;
         margin-top: 35px;
         align-items: flex-end;
-        }
-    /* .more{
-        font-weight: 300;
-    } */
-    .stickarrow{
+    }
+    .stickarrow {
         width: 85px
-        }
-
+    }
 }
 
-/* aboutus */
+/*------------------------------------------------------ 
+aboutus 
+------------------------------------------------------*/
 
-.explain-about{
+.bg-about {
     background: rgba(157, 183, 203, 0.3);
-    width: 100%;
-    height: 85vh;
+    margin-top: 50px;
+}
+
+.explain-about {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 70vh;
     position: relative;
     z-index: 1;
 }
-.about-content{
+
+.about-content {
     display: flex;
     z-index: 1;
     padding: 1% 0 0 1%;
 }
+
 .explain-list {
     background: rgba(33, 76, 129, 0.3);
     color: #fff;
@@ -658,35 +689,39 @@ header {
     font-size: 3rem;
     width: 50%;
     position: absolute;
-    top: 10vh;
+    top: 120px;
     padding: 10px;
     left: 7vw;
     z-index: 5;
 }
-.explain-list h2{
+
+.explain-list h2 {
     font-size: 4rem;
     z-index: 1;
 }
 
-.about-content-sp li{
+.about-content-sp li {
     display: flex;
-
 }
-.about-content-sp p{
+
+.about-content-sp p {
     font-family: YuGothic, /* Mac用 */
-    'Yu Gothic', /* Windows用 */;
+    'Yu Gothic', /* Windows用 */
+    ;
     align-content: space-around;
     font-size: 1.7rem;
     line-height: 4;
     z-index: 1;
     padding-left: 10px;
 }
-.about-content-sp span{
+
+.about-content-sp span {
     font-size: 3rem;
     font-weight: 600;
     padding: 2%;
     z-index: 1;
 }
+
 .explain-about img {
     float: right;
     position: absolute;
@@ -700,60 +735,64 @@ header {
 .explain-about .explain-about-description {
     width: 40%;
     position: relative;
-    top: 54vh;
-    left: 11vw;
+    top: 450px;
+    left: 145px;
     font-size: 1.5rem;
     line-height: 1.8;
 }
 
 @media screen and (max-width:768px) {
-    .explain-about{
+    .explain-about {
         margin-top: 50px;
         height: 79vh;
     }
-    .explain-list{
+    .explain-list {
         width: 80%;
         top: 5vh;
         left: 4vw;
-
     }
-    .explain-list h2{
+    .explain-list h2 {
         font-size: 3.5rem;
     }
-    .explain-list p{
+    .explain-list p {
         font-size: 1.4rem;
         padding: 0 0 15px 10px;
         line-height: inherit;
     }
-    .about-content-sp li{
+    .about-content-sp li {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
-    .about-content-sp span{
+    .about-content-sp span {
         display: block;
     }
-    .explain-about img{
+    .explain-about img {
         top: 28vh;
         width: 70%;
     }
-    .explain-about
-    .explain-about-description {
+    .explain-about .explain-about-description {
         width: 90%;
         left: 5vw;
-        top: 58vh;
+        top: 56vh;
         font-size: 1.2rem;
         letter-spacing: 1px;
         padding: 0 20px;
     }
 }
 
-/* progrm */
+/*------------------------------------------------------ 
+progrm 
+------------------------------------------------------*/
+
+.bg-program {
+    background-image: url(../img/bg-wave.png);
+}
 
 .program-list {
-    background-image: url(../img/bg-wave.png);
     opacity: 0.7;
-    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 .program-list ul {
@@ -784,35 +823,35 @@ header {
     padding: 1%;
 }
 
-.program-list li img  {
+.program-list li img {
     height: auto;
     width: 100%;
-
 }
 
 .hover01 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(0.8);
-	-webkit-transition: .3s ease-in-out;
-	transition: .2s ease-in-out;
+    -webkit-transform: scale(1);
+    transform: scale(0.8);
+    -webkit-transition: .3s ease-in-out;
+    transition: .2s ease-in-out;
 }
+
 .program-list li:hover img {
-	-webkit-transform: scale(1);
-	transform: scale(0.9);
+    -webkit-transform: scale(1);
+    transform: scale(0.9);
     transition: 0.8s;
 }
 
 @media screen and (max-width:768px) {
-    .experience{
+    .experience {
         margin-top: 30px;
     }
-    .program-list ul{
+    .program-list ul {
         width: 100%;
         flex-direction: column;
         justify-content: center;
         margin: 30px 0;
     }
-    .program-list ul li{
+    .program-list ul li {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -821,41 +860,46 @@ header {
     }
 }
 
-
-/* アプリ */
+/*------------------------------------------------------ 
+アプリ 
+------------------------------------------------------*/
 
 .app {
-width: 100%;
-text-align: center;
-background: #eee;
+    width: 100%;
+    text-align: center;
+    background: #eee;
 }
-.app img{
+
+.app img {
     width: 60%;
 }
 
-@media screen and(max-width:768px) {
+@media screen and(max-width:768px) {}
 
-
-}
-/*--------------------------- フッター ---------------------------*/
+/*------------------------------------------------------
+フッター 
+------------------------------------------------------*/
 
 .footer {
     width: 100%;
     text-align: center;
 }
-.footer img{
+
+.footer img {
     width: 7%;
 }
+
 .return-top:hover {
     color: black;
     transition: 0.8s;
 }
+
 @media screen and (max-width:768px) {
-    .footer img{
+    .footer img {
         width: 15%;
     }
 }
 
-.copyright{
+.copyright {
     padding: 2%;
 }
