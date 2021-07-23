@@ -530,6 +530,7 @@ info
     justify-content: left;
     max-width: 1500px;
     margin: 50px auto;
+    padding-left: 7%;
 }
 
 .content-title h2 {
@@ -671,7 +672,7 @@ aboutus
 .explain-about {
     max-width: 1500px;
     margin: 0 auto;
-    height: 70vh;
+    height: 80vh;
     position: relative;
     z-index: 1;
 }
@@ -689,7 +690,7 @@ aboutus
     font-size: 3rem;
     width: 50%;
     position: absolute;
-    top: 120px;
+    top: 55px;
     padding: 10px;
     left: 7vw;
     z-index: 5;
@@ -735,7 +736,7 @@ aboutus
 .explain-about .explain-about-description {
     width: 40%;
     position: relative;
-    top: 450px;
+    top: 380px;
     left: 145px;
     font-size: 1.5rem;
     line-height: 1.8;
@@ -790,7 +791,7 @@ progrm
 }
 
 .program-list {
-    opacity: 0.7;
+    /* opacity: 0.7; */
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -824,9 +825,20 @@ progrm
 }
 
 .program-list li img {
+    position: relative;
     height: auto;
     width: 100%;
 }
+
+.program-list li a img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 254, 254, 0.5);
+    }
 
 .hover01 figure img {
     -webkit-transform: scale(1);
