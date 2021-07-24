@@ -255,18 +255,16 @@ header {
     height: auto;
 }
 
-@media screen and (min-width:769px) and (max-width:1024px) {
-    .conept {
-        top: 30vh;
-    }
-}
 
 @media screen and (max-width:768px) {
     .logo{
-        top: 25vh;
+        top: 23vh;
     }
     .logo img {
-        width: 100px;
+        width: 80px;
+    }
+    .concept-text-en{
+        margin-top: 20px;
     }
 }
 
@@ -275,7 +273,7 @@ header {
     line-height: 0.8;
     width: 100%;
     z-index: 8;
-    top: 41vh;
+    top: 35vh;
 }
 
 .concept-text-ja {
@@ -291,7 +289,7 @@ header {
 }
 
 .concept-text-en {
-    font-size: min(17vw, 180px);
+    font-size: min(17vw, 140px);
     font-family: 'Cormorant Garamond', serif;
     width: 100%;
     margin-bottom: 10px;
