@@ -300,6 +300,25 @@ header {
     text-align: center;
     text-shadow: 1px 2px 3px #808080;
 }
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+@keyframes fadeUpAnime{
+from {
+    opacity: 0;
+    transform: translateY(100px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+.fadeUpTrigger{
+    opacity: 0;
+    }
 
 /*------------------------------------------------------
 top ログイン　お問い合わせ 
@@ -523,6 +542,7 @@ info
     margin-bottom: 10%;
     max-width: 1500px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .content-title {
@@ -618,11 +638,16 @@ info
 }
 
 @media screen and (max-width:768px) {
+    #info{
+        padding-bottom: 0;
+        padding-top: 10px;
+    }
     .line {
         height: 35px;
     }
     .content-title {
         margin: 10px 15px;
+        padding-left: 0;
     }
     .content-title h2 {
         font-size: 3.5rem;
@@ -672,7 +697,7 @@ aboutus
 .explain-about {
     max-width: 1500px;
     margin: 0 auto;
-    height: 80vh;
+    height: 580px;
     position: relative;
     z-index: 1;
 }
@@ -794,6 +819,7 @@ progrm
     /* opacity: 0.7; */
     max-width: 1500px;
     margin: 0 auto;
+    padding-bottom: 85px;
 }
 
 .program-list ul {
@@ -856,6 +882,9 @@ progrm
 @media screen and (max-width:768px) {
     .experience {
         margin-top: 30px;
+    }
+    .program-list{
+        padding-bottom: 0;
     }
     .program-list ul {
         width: 100%;
