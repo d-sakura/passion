@@ -20,6 +20,7 @@ top
     font-size: 20px;
     text-align: center;
     opacity: 0.5;
+    color: red;
 }
 
 .full {
@@ -256,7 +257,7 @@ header {
 }
 
 .logo img {
-    width: min(10%, 150px);
+    width: min(10%, 120px);
     height: auto;
 }
 
@@ -293,7 +294,7 @@ header {
 }
 
 .concept-text-en {
-    font-size: min(17vw, 140px);
+    font-size: min(17vw, 130px);
     font-family: 'Cormorant Garamond', serif;
     width: 100%;
     margin-bottom: 10px;
@@ -328,8 +329,8 @@ top ログイン　お問い合わせ
 .top-btn-list {
     position: absolute;
     z-index: 8;
-    right: 5%;
-    top: 45px;
+    right: 3%;
+    top: 20px;
     display: flex;
 }
 
@@ -342,16 +343,19 @@ top ログイン　お問い合わせ
     border-bottom: 1px solid #eee;
 }
 
-.top-btn-list li:hover {
+.top-btn-list a:hover {
     opacity: 0.8;
     transition: 0.8s;
     color: rgba(173, 169, 169, 0.692);
 }
 
+
 @media screen and (max-width:768px) {
     .top-btn-list {
-        top: 30px;
+        top: 25px;
+        right: 5%;
     }
+
 }
 
 /*---------------------------------------------------- 
@@ -407,7 +411,7 @@ top ログイン　お問い合わせ
 
 .join-left, .join-right {
     border: 1px solid rgba(51, 51, 51, 0.493);
-    font-size: 2rem;
+    font-size: 15px;
     letter-spacing: 2px;
     padding: 1rem 1rem;
 }
