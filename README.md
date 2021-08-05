@@ -1,7 +1,9 @@
 # 架空の新設スポーツクラブのウェブサイト構築案
 
 - 公開サイトは[こちら](https://d-sakura.github.io/passion/)
-- 提案書(<img src="./img/passion-proposal.pdf">)
+- 提案書
+![提案書](./img/passion-proposal.pdf)
+
 
 <!-- **aaa**aaa __dd__ 
 
